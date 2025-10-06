@@ -26,7 +26,8 @@ Services included in this setup:
 - InfluxDB – A time-series database designed for metrics and monitoring data.
 - Anaconda (Python environment) – A data science environment that can produce or consume Kafka streams, run analytics, and query the databases directly.
 
-### How it works: Docker Compose reads the YAML file, launches all containers, creates a custom network for them to communicate, and sets up volumes so that data persists even if containers are removed. This guarantees consistency and makes the system portable.
+### How it works:
+Docker Compose reads the YAML file, launches all containers, creates a custom network for them to communicate, and sets up volumes so that data persists even if containers are removed. This guarantees consistency and makes the system portable.
 
 <img width="1460" height="2220" alt="yaml file" src="https://github.com/user-attachments/assets/37d072ab-5e9f-4caf-9186-8e135688a65d" />
 
@@ -34,13 +35,13 @@ Services included in this setup:
 
 ### Service interactions:
 
-Zookeeper → Kafka: Kafka requires Zookeeper to manage its cluster and organize brokers.
+- Zookeeper → Kafka: Kafka requires Zookeeper to manage its cluster and organize brokers.
 
-Kafka → Databases: Kafka streams incoming data into PostgreSQL, Cassandra, and InfluxDB.
+- Kafka → Databases: Kafka streams incoming data into PostgreSQL, Cassandra, and InfluxDB.
 
-Anaconda ↔ Kafka & Databases: Anaconda can send (produce) data to Kafka, read (consume) data from Kafka, and query all databases directly for analytics or processing.
+- Anaconda ↔ Kafka & Databases: Anaconda can send (produce) data to Kafka, read (consume) data from Kafka, and query all databases directly for analytics or processing.
 
-Network and Ports: All services communicate through the trading-net, a custom Docker network. Each service can be accessed externally via mapped ports:
+- Network and Ports: All services communicate through the trading-net, a custom Docker network. Each service can be accessed externally via mapped ports:
 
 | Service    | Default Port | Custom External Port |
 | ---------- | ------------ | -------------------- |
