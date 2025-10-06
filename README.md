@@ -19,17 +19,12 @@ In this project, we created a simulation of a real-world trading system. The sys
 
 Services included in this setup:
 
-Zookeeper – Coordinates Kafka brokers to manage distributed messaging.
-
-Kafka – Handles real-time data streams and acts as a message broker between producers and consumers.
-
-PostgreSQL – A relational database for structured transactional data.
-
-Cassandra – A NoSQL database optimized for high-volume, distributed data.
-
-InfluxDB – A time-series database designed for metrics and monitoring data.
-
-Anaconda (Python environment) – A data science environment that can produce or consume Kafka streams, run analytics, and query the databases directly.
+- Zookeeper – Coordinates Kafka brokers to manage distributed messaging.
+- Kafka – Handles real-time data streams and acts as a message broker between producers and consumers.
+- PostgreSQL – A relational database for structured transactional data.
+- Cassandra – A NoSQL database optimized for high-volume, distributed data.
+- InfluxDB – A time-series database designed for metrics and monitoring data.
+- Anaconda (Python environment) – A data science environment that can produce or consume Kafka streams, run analytics, and query the databases directly.
 
 ### How it works: Docker Compose reads the YAML file, launches all containers, creates a custom network for them to communicate, and sets up volumes so that data persists even if containers are removed. This guarantees consistency and makes the system portable.
 
