@@ -88,12 +88,13 @@ This setup demonstrates a realistic, multi-service data system in a controlled e
 <img width="1264" height="708" alt="image" src="https://github.com/user-attachments/assets/28a1beba-bfbc-4a13-98aa-450bcb11d3bf" />
 
 
-### Step 3 — Clone Your GitHub Project
+### Step 3 — Creating a Project Folder
+- Open a terminal and run: mkdir trading-tools-docker
+- and run cd trading-tools-docker
 
-Open a terminal in the folder where you want to save your project.
 
-Run: git clone https://github.com/YourUsername/YourRepo.git
-cd YourRepo
+<img width="1913" height="1028" alt="image" src="https://github.com/user-attachments/assets/000010d3-6aee-4579-911a-ba7cddedb0c7" />
+
 
 
 
