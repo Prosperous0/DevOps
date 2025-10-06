@@ -78,4 +78,22 @@ This setup demonstrates a realistic, multi-service data system in a controlled e
 <img width="1600" height="916" alt="image" src="https://github.com/user-attachments/assets/31650c7d-47d4-40da-904b-268992e6ace4" />
 
 
+### Step 2 — Install Docker Desktop
+
+- Run the installer.
+- Enable CPU virtualization from the bios system if its disabled
+- Accept the license agreement and keep the default settings.
+- Wait for installation to finish, then restart your computer if prompted.
+
+<img width="1264" height="708" alt="image" src="https://github.com/user-attachments/assets/28a1beba-bfbc-4a13-98aa-450bcb11d3bf" />
+
+
+### Step 3 — Clone Your GitHub Project
+
+Open a terminal in the folder where you want to save your project.
+
+Run: git clone https://github.com/YourUsername/YourRepo.git
+cd YourRepo
+
+
 
