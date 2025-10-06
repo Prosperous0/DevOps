@@ -4,17 +4,13 @@ DevOps (Development and Operations) is a methodology that combines software deve
 
 One of the most important tools in this workflow is Docker Compose. Docker Compose simplifies the management of multi-container applications, allowing multiple services to run in isolated Docker containers but work together seamlessly. The YAML file used by Docker Compose defines:
 
-The Docker images for each service
+- The Docker images for each service
+- Port mappings to access services
+- Volumes for data persistence
+- Network configurations for inter-service communication
+- Dependencies to control the startup order of services
 
-Port mappings to access services
-
-Volumes for data persistence
-
-Network configurations for inter-service communication
-
-Dependencies to control the startup order of services
-
-By using Docker Compose, developers can replicate a complex production-like environment on any machine with a single command: docker-compose up
+### By using Docker Compose, developers can replicate a complex production-like environment on any machine with a single command: docker-compose up
 
 
 ## WHO IS WHO: 
@@ -94,6 +90,12 @@ This setup demonstrates a realistic, multi-service data system in a controlled e
 
 
 <img width="1913" height="1028" alt="image" src="https://github.com/user-attachments/assets/000010d3-6aee-4579-911a-ba7cddedb0c7" />
+
+### Step 4 - Creating the docker-Compose.yml file
+- We paste the Yaml. configuration into a text file saved on our desktop
+  
+<img width="1909" height="1033" alt="Screenshot 2025-10-06 141506" src="https://github.com/user-attachments/assets/fdc0ca51-27f0-4494-94e9-8889e2bf6c07" />
+
 
 
 
