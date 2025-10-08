@@ -142,7 +142,7 @@ This setup demonstrates a realistic, multi-service data system in a controlled e
 - the credentials are in the Yaml. code file as shown below
 <img width="441" height="275" alt="image" src="https://github.com/user-attachments/assets/a0eb1cd0-58cd-438f-aa8d-bbf4d7de81c2" />
 
--this is the homepage after logging in with our designated credentials
+- this is the homepage after logging in with our designated credentials
 <img width="1913" height="1029" alt="image" src="https://github.com/user-attachments/assets/d408d788-07f8-4e86-a60a-1c85b8969474" />
 
 
