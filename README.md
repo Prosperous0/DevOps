@@ -145,6 +145,27 @@ This setup demonstrates a realistic, multi-service data system in a controlled e
 - this is the homepage after logging in with our designated credentials
 <img width="1913" height="1029" alt="image" src="https://github.com/user-attachments/assets/d408d788-07f8-4e86-a60a-1c85b8969474" />
 
+### Step 11: Checking Conda 
+
+- We opened a shell in the Anaconda container and checked conda --version. The screenshot shows either success or an error that conda is recognized
+
+<img width="1437" height="595" alt="image" src="https://github.com/user-attachments/assets/2b181b89-784d-45d3-9f59-2baafc729f75" />
+
+### Step 12: Netowrk
+
+- All containers are connected through a custom Docker network (e.g., trading-net).
+- 
+- This allows inter-container communication using service names (like postgres, kafka, etc.) instead of IP addresses.
+
+### Step 13: Volumes 
+
+- Docker volumes are used to persist data so that it isn’t lost when containers are stopped or removed.
+- To list all volumes: docker volume ls
+- Common practice: each service has a mapped volume for storing its data (e.g., /var/lib/postgresql/data for PostgreSQL).
+  
+ <img width="1864" height="1019" alt="image" src="https://github.com/user-attachments/assets/1a579b46-0930-4af9-9259-fec661518920" />
+
+
 
 
 
