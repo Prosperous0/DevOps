@@ -88,7 +88,7 @@ This setup demonstrates a realistic, multi-service data system in a controlled e
 <img width="1913" height="1028" alt="image" src="https://github.com/user-attachments/assets/000010d3-6aee-4579-911a-ba7cddedb0c7" />
 
 ### Step 4 - Creating the docker-Compose.yml file
-- We paste the Yaml. configuration into a text file saved on our desktop
+- We paste the Yaml. configuration into a text file saved on trading-tools-docker
   
 <img width="1909" height="1033" alt="Screenshot 2025-10-06 141506" src="https://github.com/user-attachments/assets/fdc0ca51-27f0-4494-94e9-8889e2bf6c07" />
 
