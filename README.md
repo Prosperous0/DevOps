@@ -95,6 +95,9 @@ This setup demonstrates a realistic, multi-service data system in a controlled e
 
 <img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/f4d521ee-dc48-439d-8a28-72e4c5a9d80a" />
 
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/4dc141eb-3158-422c-96b1-f6e84aaa3291" />
+
+<img width="1779" height="1018" alt="image" src="https://github.com/user-attachments/assets/7c623b8f-f06d-4687-81cf-a8e14492f635" />
 
 
 
