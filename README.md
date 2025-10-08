@@ -84,8 +84,8 @@ This setup demonstrates a realistic, multi-service data system in a controlled e
 - Open a terminal and run: mkdir trading-tools-docker
 - and run cd trading-tools-docker
 
-
 <img width="1913" height="1028" alt="image" src="https://github.com/user-attachments/assets/000010d3-6aee-4579-911a-ba7cddedb0c7" />
+
 
 ### Step 4 - Creating the docker-Compose.yml file
 - We paste the Yaml. configuration into a text file saved on trading-tools-docker
@@ -93,12 +93,42 @@ This setup demonstrates a realistic, multi-service data system in a controlled e
 <img width="1909" height="1033" alt="Screenshot 2025-10-06 141506" src="https://github.com/user-attachments/assets/fdc0ca51-27f0-4494-94e9-8889e2bf6c07" />
 
 
+### Step 5: We use the Command: docker compose pull
+- This downloads all necessary Docker images defined in the docker-compose.yaml file (Kafka, Cassandra, PostgreSQL, InfluxDB, Anaconda, etc.).
+- The images are shown under the Images tab in Docker Desktop.
+
 <img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/f4d521ee-dc48-439d-8a28-72e4c5a9d80a" />
+
+<img width="1769" height="885" alt="image" src="https://github.com/user-attachments/assets/bf6e8ffa-37a0-4e83-b5be-0a9331135907" />
+
+
+### Step 6: We use the Command: docker compose up
+- Starts all services in detached mode (background).
+- You can see the containers running in the Containers tab.
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/4dc141eb-3158-422c-96b1-f6e84aaa3291" />
 
+<img width="1852" height="981" alt="image" src="https://github.com/user-attachments/assets/f931cc3d-42e3-4122-9ade-5890ed5f7434" />
+
+<img width="1852" height="1016" alt="image" src="https://github.com/user-attachments/assets/77bd895d-41aa-4068-9fbf-6b5bce0fd5a6" />
+
+
+### Step 7: To Verify Everything is Running as intended 
+- We use the command: docker ps
+- it Lists all currently running containers.
+- Each container will show its ports, status, and uptime.
+- You should see something like:
+
 <img width="1779" height="1018" alt="image" src="https://github.com/user-attachments/assets/7c623b8f-f06d-4687-81cf-a8e14492f635" />
 
+### Step 8: 
+- We first connect to the container using this command: docker exec -it postgres psql -U admin -d postgres
+- Creating a New Project Database using the command: CREATE DATABASE tradingdb;
+- Verify the Database Exists using this command: \l
+- Connect to the New Database using: \c tradingdb
+- After we are done, we exist using \q  then run the command: docker exec -it postgres psql -U admin -d tradingdb
+ 
+<img width="1862" height="1019" alt="image" src="https://github.com/user-attachments/assets/bd8c6e25-0faf-41bc-bb7d-f4393b9ef940" />
 
 
 
