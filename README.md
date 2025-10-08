@@ -45,10 +45,10 @@ Docker Compose reads the YAML file, launches all containers, creates a custom ne
 
 | Service    | Default Port | Custom External Port |
 | ---------- | ------------ | -------------------- |
-| PostgreSQL | 5432         | 55432                |
-| Cassandra  | 9042         | 19042                |
-| InfluxDB   | 8086         | 18086                |
-| Kafka      | 29092        | 29093                |
+| PostgreSQL | 5432         | 5432                |
+| Cassandra  | 9042         | 9042                |
+| InfluxDB   | 8086         | 8086                |
+| Kafka      | 9092        | 9093                |
 | Zookeeper  | 2181         | 2182                 |
 | Anaconda   | 8888         | 18888                |
 
@@ -129,6 +129,25 @@ This setup demonstrates a realistic, multi-service data system in a controlled e
 - After we are done, we exist using \q  then run the command: docker exec -it postgres psql -U admin -d tradingdb
  
 <img width="1862" height="1019" alt="image" src="https://github.com/user-attachments/assets/bd8c6e25-0faf-41bc-bb7d-f4393b9ef940" />
+
+### Step 9: Cassandra, Accessing each service
+- We opened an interactive Cassandra CLI (cqlsh) inside the cassandra container.
+- This is how we run CQL commands, inspect keyspaces/tables, or create schema
+- By using this command: docker exec -it cassandra cqlsh
+
+<img width="1853" height="1015" alt="image" src="https://github.com/user-attachments/assets/799e89f1-81f9-4101-88b8-fd788a56e3ec" />
+
+### Step 10: Accesing InfluxDB
+- we open ourbrowser, and access the website (localhost) : http://localhost:8086
+- the credentials are in the Yaml. code file as shown below
+<img width="441" height="275" alt="image" src="https://github.com/user-attachments/assets/a0eb1cd0-58cd-438f-aa8d-bbf4d7de81c2" />
+
+-this is the homepage after logging in with our designated credentials
+<img width="1913" height="1029" alt="image" src="https://github.com/user-attachments/assets/d408d788-07f8-4e86-a60a-1c85b8969474" />
+
+
+
+
 
 
 
